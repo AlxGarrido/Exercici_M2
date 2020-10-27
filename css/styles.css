@@ -1,0 +1,491 @@
+/***** RESET *****/
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+ol, ul {
+    list-style: none;
+    margin: 0;
+}
+
+
+/***** STYLES *****/
+
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+/* header */
+
+
+.top-header {
+    background: #252525;
+}
+
+.top-nav {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: .9em;
+}
+
+.top-header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-header nav a {
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    opacity: .8;
+}
+
+.top-header nav a:hover {
+    opacity: 1;
+}
+
+.main-header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main-header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header nav ul li{
+    padding: 10px;
+    margin-top: 6px;
+    text-transform: uppercase;
+    font-size: .9em;
+}
+
+.main-header nav ul li a {
+    text-decoration: none;
+    color: #252525;
+    font-weight: 400;
+} 
+
+.logo a {
+    text-decoration: none;
+    color: #252525;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.search-container {
+    width: 50%;
+}
+
+.search-input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: .8em;
+    width: 95%;
+    height: 14px;
+    border: 1px solid #252525;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.2rem;
+    padding: 6px 10px;
+}
+
+.btn-search {
+    cursor: pointer;
+    color: #fff;
+    background-color: #424242;
+    border: none;
+    border-radius: 3px;
+    width: 27px;
+    height: 27px;
+    padding: 3px 2px;
+    margin: 1px 0 0 2px;
+}
+
+
+/* main */
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}  
+
+.hero-img {
+    width: 100%;
+    height: auto;
+}
+
+.search-container-hero {
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    width: 50%;
+    display: none;
+}
+
+
+/* article */
+
+.top-books {
+    width: 90%;
+    margin: 40px auto;
+    padding-bottom: 50px;
+
+}
+
+/* .top-books:nth-of-type(1) {
+    border-bottom: 1px solid #eeecec;
+} */
+
+.heading {
+    text-align: center;
+    margin: 0px 0px;
+}
+
+.heading-title {
+    font-size: 1.3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 20px; 
+}
+
+.custom-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.custom-card {
+    width: 15%;
+    text-align: center;
+}
+
+.card-number {
+    background: #1d1d1d;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    color: #ffffff;
+    display: inline-block;
+}
+
+.card-number  h3 {
+    display: inline;
+    font-weight: 400;
+    text-align: center;
+    font-size: 14px;
+} 
+
+.card-content {
+    margin-top: 10px;
+}
+
+.bookcover {
+    width: 90%;
+    height: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.coverimg {
+    width: 100%;
+    background-color: pink;
+}
+
+.card-text {
+    margin: 3px 2px 12px 3px;
+    padding: 0px 3px;
+    font-size: 13px;
+    font-weight: 200;
+    text-align: justify;
+    word-spacing: -1px;
+}
+
+.card-text  .btn {
+        padding-left: 3px;
+}
+
+.card-text .long-text {
+        display: inline;
+}
+
+.card-text .short-text {
+    display: none;
+}
+
+.card-text i {
+        font-size: 10px;
+        color: #252525;
+}
+
+.card-tex a {
+        text-decoration: none;
+        color: black;
+        font-weight: 300;
+}
+
+.cards-btn {
+    width: 110px;
+    height: 35px;
+    margin: auto;
+    background: #252525;
+    border-radius: 5%;
+    border: none;
+}
+
+.cards-btn a {
+        color: white;
+        align-items: center;
+        font-weight: 300;
+        font-size: 1rem;
+        text-decoration: none;
+        justify-content: center;
+        display: flex;
+}
+    
+.cistell-btn i {
+    padding: 5px 8px 5px 0px;
+}
+
+.btn-text-one{
+    font-size: 10px;
+}
+
+.btn-text-two {
+    display: none;
+}
+
+.footer-container {
+    background: #252525;
+    height: 200px;
+    position: relative;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1240px) {
+    .search-container {
+        margin-left: 25px;
+    }
+    .card-text {
+         font-size: 11px;
+    }   
+}
+
+@media only screen and (max-width: 920px) {
+    .topnav {
+        width: 65%;
+    }
+    .cards-btn {
+        width: 97px;
+        height: 30px;
+    }
+    .cistell-btn .fa  {
+        font-size: .8em;
+    }
+    .card-text {
+        font-size: 10px;
+    }
+    .card-text .short-text {
+        display: inline;
+    } 
+    .card-text .long-text {
+        display: none;
+    }   
+    
+}
+
+
+@media only screen and (max-width: 840px) {
+    .search-container {
+        display: none;
+    }
+    .search-container-hero {
+        display: inline;
+        top: 45%;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .top-header {
+        width: 100%;
+    }
+    .top-nav {
+        width: 60%;
+    }
+    .top-header nav a {
+        padding: 8px;
+    }
+    .main-header {
+        width: 90%;
+    }
+    .heading-title {
+        font-size: 1em;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-bottom: 10px; 
+    }
+    .custom-card {
+        width: 30%;
+    }
+   .custom-card:nth-child(4){
+        margin-top: 30px;
+    }
+    .custom-card:nth-child(5){
+        margin-top: 30px;
+    }
+    .cards-btn {
+        width: 60px;
+        height: 23px;
+    }
+    .cards-btn a {
+            font-size: .8rem;
+    }  
+    .btn-text-one {
+        display: none;
+    }
+    .btn-text-two {
+        display: inline;
+        font-size: 8px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .top-header {
+        width: 100%;
+    }
+    .top-nav {
+        width: 60%;
+    }
+    .main-header nav ul li {
+        padding: 6px;
+        margin-top: 8px;
+        font-size: .7em;
+    }
+    .logo a {
+        font-size: 1.1em;
+    }
+    .custom-card {
+        width: 35%;
+    }
+    .custom-card:nth-child(3){
+        margin-top: 30px;
+    }
+    .search-input {
+        font-size: .6em;
+        height: 10px;
+    }
+    .btn-search {
+        width: 25px;
+        height: 23px;
+        margin: 0 0 0 2px;
+    }
+    .btn-search i {
+        padding: 0 0 3px 0;
+        font-size: 11px;
+    }
+    .search-container-hero {
+        top: 35%;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .top-nav {
+        width: 95%;
+        font-size: .7em;
+        padding: 5px;
+    }
+    .top-header nav a {
+        padding: 5px;
+    }
+    .main-header nav {
+        justify-content: space-around;
+    }
+    .logo a {
+        font-size: 1em;
+    }
+    .main-header nav ul li {
+        padding: 6px;
+        margin-top: 6px;
+        font-size: .55em;
+    }
+    .search-container-hero {
+        top: 25%;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .top-nav {
+        width: 95%;
+    }
+    .top-header nav a {
+        padding: 5px;
+    }
+    .card-text {
+        display: none;
+    }
+    .search-container-hero {
+        top: 20%;
+    }
+    .top-nav {
+        font-size: .7em;
+        padding: 5px;
+    }
+    .main-header nav ul li {
+        padding: 0px 6px 5px 0;
+        margin-top: 6px;
+        font-size: .50em;
+    }
+    .search-input {
+        font-size: .5em;
+        height: 8px;
+    }
+    .btn-search {
+        width: 22px;
+        height: 21px;
+        margin: 1px 0 0 2px;
+    }
+    .btn-search i {
+        padding: 0px 5px 0px 5px;
+        font-size: 10px;
+    }
+    .heading-title {
+        font-size: .8em;
+    }
+} 
